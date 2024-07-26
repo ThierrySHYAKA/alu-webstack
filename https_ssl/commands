@@ -3,8 +3,8 @@ sudo apt install snapd
 sudo apt-get remove certbot
 sudo apt-get install certbot
 sudo service haproxy stop
-sudo certbot certonly --standalone --preferred-challenges http --http-01-port 80 -d www.shafiiramadhaniwanjenja.tech
-sudo ls /etc/letsencrypt/live/www.shafiiramadhaniwanjenja.tech
+sudo certbot certonly --standalone --preferred-challenges http --http-01-port 80 -d www.thierryshop.tech
+sudo ls /etc/letsencrypt/live/www.thierryshop.tech
 sudo mkdir -p /etc/haproxy/certs
 DOMAIN='www.shafiiramadhaniwanjenja.tech' sudo -E bash -c 'cat /etc/letsencrypt/live/$DOMAIN/fullchain.pem /etc/letsencrypt/live/$DOMAIN/privkey.pem > /etc/haproxy/certs/$DOMAIN.pem'
 sudo chmod -R go-rwx /etc/haproxy/certs
